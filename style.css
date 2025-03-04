@@ -4,12 +4,25 @@
     src: url(Fonts/Norse-Bold.otf);
 }
 
+.body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .container {
     display: flex;
     box-sizing: border-box;
     max-width: 1200px;
     height: 100vh; 
     margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    width: 60%;
+    padding-left: 40px; padding-right: 40px;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .left_column {
@@ -57,3 +70,29 @@
     font-weight: bold;
     color: white;
 }
+
+.form_section, .form_input, .form_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_row {
+    display: flex;
+    column-gap: 40px;
+}
+
+.form_section{
+    row-gap: 20px;
+    padding-bottom: 20px; padding-top: 10px;
+}
+
+.form_footer {
+    row-gap: 40px;
+}
+
+.form_footer button{
+    background-color: #596D48;
+    color: white;
+    font-size: 24px;
+}
+
